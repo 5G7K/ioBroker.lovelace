@@ -1,4 +1,4 @@
-<script type="text/x-iobroker" data-template-name="lovelace">
+<script type="text/x-iobroker" data-template-name="lovelace2">
     <div class="row">
         <div class="col s2">
             <input type="checkbox" data-field="enabled" data-default="false"/>
@@ -54,7 +54,7 @@
 
 <script type="text/javascript">
     $.get({
-        url: 'adapter/lovelace/words.js',
+        url: 'adapter/lovelace2/words.js',
         success: function (script) {
             let translation = script.substring(script.indexOf('{'), script.length);
             translation = translation.substring(0, translation.lastIndexOf('};') + 1);
@@ -68,7 +68,7 @@
     // - with function in global variable "defaults". Function name is equal with adapter name.
     //   as input function receives object with all information concerning it
     if (typeof defaults !== 'undefined') {
-        defaults["lovelace"] = function (obj, instanceObj) {
+        defaults["lovelace2"] = function (obj, instanceObj) {
             return {
                 enabled: false,
                 entity: '',
@@ -78,7 +78,7 @@
     }
 
     if (typeof customPostInits !== 'undefined') {
-        customPostInits.lovelace = function ($div, values, instanceObj, type, role) {
+        customPostInits.lovelace2 = function ($div, values, instanceObj, type, role) {
             try {
                 var myNamespace = instanceObj._id.replace('system.adapter.', '');
                 var currentObj = gMain.objects[gMain.navigateGetParams()];
@@ -182,7 +182,7 @@
 
     async function getEntitiesAsync(pattern) {
         return new Promise(resolve => {
-            gMain.socket.emit('sendTo', 'lovelace.0', 'browse', null, list => {
+            gMain.socket.emit('sendTo', 'lovelace2.0', 'browse', null, list => {
                 if (list && Object.keys(list).length > 0) {
                     resolve(list);
                 } else {

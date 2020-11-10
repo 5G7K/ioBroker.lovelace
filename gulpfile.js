@@ -49,7 +49,7 @@ function lang2data(lang, isFlat) {
     }
 }
 
-const NODE_JS_EXPORT = `if (typeof module !== 'undefined' && module.parent) { module.exports = lovelace_systemDictionary; }\n`;
+const NODE_JS_EXPORT = `if (typeof module !== 'undefined' && module.parent) { module.exports = lovelace2_systemDictionary; }\n`;
 function readWordJs(src) {
     try {
         let words;
@@ -77,7 +77,7 @@ function padRight(text, totalLength) {
 function writeWordJs(data, src) {
     let text = '';
     text += "'use strict';\n\n";
-    text += 'var lovelace_systemDictionary = {\n';
+    text += 'var lovelace2_systemDictionary = {\n';
     for (const word in data) {
         if (data.hasOwnProperty(word)) {
             text += '    ' + padRight('"' + word.replace(/"/g, '\\"') + '": {', 50);

@@ -4,7 +4,7 @@ function getToolbar() {
             .querySelector('home-assistant-main').shadowRoot
             //.querySelector('app-drawer-layout')
             .querySelector('partial-panel-resolver')
-            .querySelector('ha-panel-lovelace').shadowRoot
+            .querySelector('ha-panel-lovelace2').shadowRoot
             .querySelector('hui-root').shadowRoot
             //.querySelector('ha-app-layout')
             //.querySelector('app-header')
