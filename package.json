@@ -1,12 +1,12 @@
 {
-  "name": "iobroker.lovelace",
+  "name": "iobroker.lovelace2",
   "version": "1.2.7",
   "description": "With this adapter you can build visualization for ioBroker with Home Assistant Lovelace UI",
   "author": {
     "name": "bluefox",
     "email": "dogafox@gmail.com"
   },
-  "homepage": "https://github.com/ioBroker/ioBroker.lovelace",
+  "homepage": "https://github.com/5G7K/ioBroker.lovelace",
   "license": "Apache-2.0",
   "keywords": [
     "ioBroker",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioBroker/ioBroker.lovelace"
+    "url": "https://github.com/5G7K/ioBroker.lovelace"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.4.0",
@@ -63,7 +63,7 @@
     "release": "release-script"
   },
   "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.lovelace/issues"
+    "url": "https://github.com/5G7K/ioBroker.lovelaceissues"
   },
   "readmeFilename": "README.md"
 }

@@ -21,7 +21,7 @@ let adapter;
 function startAdapter(options) {
     // Create the adapter and define its methods
     return adapter = utils.adapter(Object.assign({}, options, {
-        name: 'lovelace',
+        name: 'lovelace2',
 
         // The ready callback is called when databases are connected and adapter received configuration.
         // start here!
